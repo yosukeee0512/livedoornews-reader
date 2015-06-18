@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}<ul class="tab" style="list-style-type: none;">
+{% for category_article in article_list %}
+<li{% if forloop.counter == 1 %} class="select"{% endif %}>{{category_article.cat_name}}</li>
+{% endfor %}
+</ul>
+<ul class="content" style="list-style-type: none;">
+{% for category_article in article_list %}
+<li{% if not forloop.counter == 1 %} class="hide_list"{% endif %}>
+{% for object in category_article.objects %}
+
+<div class="article">
+<div class="pub_date">{{object.pub_date}}</div>
+<div class="title"><a href="/article/{{object.id}}/">{{object.title}}</a></div>
+<div class="url">{{object.url}}</div>
+</div>
+{% endfor %}
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+{% block content_title %}最新記事一覧{% endblock %}

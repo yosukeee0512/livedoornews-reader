@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}{{article.title}}{% endblock %}
+
+{% block content %}
+{% if article %}
+<div class="article_content">
+<div>{{article.pub_date}}</div>
+<div>{{article.description}}</div>
+<div>カテゴリー:{{article.category}}</div>
+<div>タグ:{% for tag in article.tag.all %}<li class="tag" style="list-style:none;display:inline-block;">{{tag.name}}</li>{% endfor %}</div>
+
+<div><a href="{{article.url}}">記事を読む</a></div>
+</div>
+{%endif%}
+
+{% if relatedarticles %}
+<div class="related">同一{{relatedarticles.1}}の関連記事
+{% for article in relatedarticles.0 %}
+<div class="article">
+<div class="pub_date">{{article.pub_date}}</div>
+<div class="title"><a href="{{article.url}}">{{article.title}}</a></div>
+<div class="url">{{article.url}}</div>
+</div>
+{% endfor %}</div>
+{% endif %}
+{% endblock %}
+
+{% block content_title %}{{article.title}}{% endblock %}

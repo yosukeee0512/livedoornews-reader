@@ -1,0 +1,18 @@
+.tab{overflow:hidden;}
+.tab li{background: #ccc;padding: 5px 20px;float: left;margin-right: 0.1%;font-size: 0.8em;width: 9.9%;min-width: 90px;list-style-type: none;}
+.tab li.select{background:#eee;}
+.content {padding: 0;}
+.tab {padding: 0;}
+.content li{background:#eee;}
+.hide_list {display:none;}
+ul.content li div a {font-size: 0.9em;}
+.related .article {font-size: 0.9em;border: 2px solid #333;border-radius: 4px;margin: 10px 1px 10px;overflow: hidden;}
+.related .article .title {border-bottom: 1px solid #000;}
+.article_content {margin-bottom:30px;}
+.article_content div a {display: block;text-align: center;margin-left: auto;margin-right: auto;width: 100%;font-size: 1.5em;color: #ffffff !important;
+background-color: #2989d8;-webkit-border-radius: 0px;-moz-border-radius: 0px;-webkit-box-shadow: 0px 0px 0px #1a6ea0;-moz-box-shadow: 0px 0px 0px #1a6ea0;
+box-shadow: 0px 0px 0px #1a6ea0;text-shadow: 0px 0px 0px rgba(0,0,0,0.5);}
+.article_content div a:hover {color: #2989F8 !important;background-color: #FFFFFF;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;
+-webkit-box-shadow: 0px 0px 3px #2989F8;-moz-box-shadow: 0px 0px 3px #2989F8;box-shadow: 0px 0px 3px #2989F8;text-shadow: 1px 1px 5px rgba(0,0,0,0.5);}
+ul.content li .article {font-size: 0.9em;border: 2px solid #333;border-radius: 4px;margin: 10px 1px 10px;overflow: hidden;}
+ul.content li .article .title {border-bottom: 1px solid #000;}
